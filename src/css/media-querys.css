@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@media only screen and (max-width: 635px) {
+  #modal-container {
+    padding: 1em;
+  }
+  #modal-container h2 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  #modal-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #modal-body img {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+  }
+  #movie-info {
+    padding: 0;
+    margin: 0;
+  }
+
+  #movie-info label {
+    margin: 0;
+    font-size: 1em;
+  }
+  #movie-info > p{
+    font-size: .8em;
+    margin: .4em;
+  }
+  #add-to-list {
+    margin: 0;
+  }
+  header nav img {
+    width: 65px;
+  }
+
+  #botao-search {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header nav #busca-titulo,
+  header nav #busca-ano {
+    width: 65px; /* Defina a largura desejada para os inputs */
+  }
+
+  header nav #botao-search {
+    width: 60px;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  #movie-list article {
+    margin: 0;
+  }
+  
+  #movie-list article img {
+    width: 250px;
+  }
+}

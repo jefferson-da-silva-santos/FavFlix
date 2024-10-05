@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/styles-index.css" />
+    <link rel="stylesheet" href="src/css/styles-modal.css" />
+    <link rel="shortcut icon" href="src/image/favicon.ico" />
+    <link rel="stylesheet" href="src/libs/notie-master/dist/notie.min.css" />
+    <link rel="stylesheet" href="src/css/media-querys.css">
+    <title>Filmes</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="src/image/netflix-logo.png" alt="Logo FavFlix" />
+        <div id="div-nav">
+          <img
+            id="icon-search"
+            src="src/image/icon-search.png"
+            alt="icone search"
+          />
+
+          <input class="busca"
+            placeholder="Título"
+            type="text"
+            name="titulo"
+            id="busca-titulo"
+            autocomplete="off"
+          />
+          <input class="busca"
+          placeholder="Ano"
+          type="text" 
+          name="ano" 
+          id="busca-ano"
+          autocomplete="off"
+          />
+
+          <button class="busca" id="botao-search">Search</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="div-transparent">
+        <h1 id="frase-lista"></h1>
+        <!--Section para os filmes-->
+        <section id="movie-list">
+        </section>
+        <!--Aqui é a vizualização do filme-->
+        <article id="modal-overlay" class="overlay">
+          <section id="modal-backgound"></section>
+
+          <section id="modal-container"></section>
+        </article>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="src/js/modal.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/libs/notie-master/dist/notie.min.js"></script>
+  </body>
+</html>

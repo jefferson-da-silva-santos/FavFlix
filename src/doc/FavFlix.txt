@@ -1,0 +1,47 @@
+Documentação Técnica do Sistema FavFlix
+
+1. Introdução
+
+O FavFlix é um sistema web que permite aos usuários criar e gerenciar listas personalizadas de seus filmes favoritos. Inspirado na famosa plataforma de streaming Netflix, o FavFlix oferece uma interface amigável e funcionalidades que facilitam a busca, visualização e organização dos filmes preferidos dos usuários.
+
+O sistema integra-se à API OMDb para obter informações detalhadas sobre os filmes, como título, elenco, gênero, ano de lançamento, entre outros. Além disso, utiliza a biblioteca notie.js para exibir notificações responsivas no navegador, proporcionando uma experiência de usuário mais interativa.
+
+
+2. Tecnologias Utilizadas
+
+HTML5: Utilizado para a estruturação da interface do usuário.
+CSS3: Responsável pela estilização e layout responsivo da aplicação.
+JavaScript (ES6+): Responsável pela lógica de interação do usuário, manipulação do DOM e integração com a API OMDb.
+API OMDb: Fornecimento de informações detalhadas sobre os filmes, através de requisições HTTP.
+notie.js: Biblioteca JavaScript utilizada para exibir notificações responsivas no navegador.
+
+3. Funcionalidades Principais
+
+3.1 Pesquisa de Filmes
+Os usuários podem buscar filmes informando o título, o ano de lançamento ou ambos.
+As consultas são enviadas para a API OMDb para obter informações detalhadas sobre os filmes correspondentes.
+
+3.2 Visualização de Detalhes
+Ao selecionar um filme na lista de resultados da pesquisa, é exibido um modal com informações detalhadas sobre o filme, como título, poster, elenco, gênero e ano de lançamento.
+
+3.3 Adição à Lista de Favoritos
+Os usuários podem adicionar filmes à sua lista de favoritos através de um botão específico na interface.
+Antes de adicionar, o sistema verifica se o filme já está na lista para evitar duplicações.
+
+3.4 Remoção da Lista de Favoritos
+Permite aos usuários remover filmes da lista de favoritos através de um botão de remoção associado a cada filme na lista.
+A remoção é confirmada através de um modal de confirmação.
+
+3.5 Notificações Responsivas
+Utiliza a biblioteca notie.js para enviar notificações responsivas no navegador.
+Notificações são exibidas em casos de erros durante a busca de filmes ou outras operações no sistema.
+
+4. Integração com a API OMDb
+
+O FavFlix se comunica com a API OMDb para obter informações detalhadas sobre os filmes. As requisições são enviadas para o endpoint http://www.omdbapi.com/?apikey=[sua-chave-api]&, onde [sua-chave-api] é a chave de API fornecida após o registro na API OMDb. É importante mencionar que a versão gratuita da API possui um limite diário de 1000 requisições.
+
+5. Considerações Finais
+
+O FavFlix oferece uma experiência intuitiva e eficiente para os usuários gerenciarem suas listas de filmes favoritos. A integração com a API OMDb amplia as funcionalidades da aplicação, proporcionando acesso a um vasto banco de dados de filmes. A utilização da biblioteca notie.js adiciona uma camada de interatividade através de notificações responsivas, melhorando a experiência de uso do sistema.
+
+Para mais informações ou suporte técnico, entre em contato com a equipe de desenvolvimento do FavFlix.
