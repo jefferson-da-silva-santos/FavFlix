@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tituloInput.value && anoInput.value) {
       if (validarAno(ano)) {
         try {
-          const url = `http://www.omdbapi.com/?apikey=${key}&t=${titulo}&y=${ano}`;
+          const url = `https://www.omdbapi.com/?apikey=${key}&t=${titulo}&y=${ano}`;
           const resposta = await fetch(url);
           const dados = await resposta.json();
           if (dados.Error) {
