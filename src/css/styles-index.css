@@ -80,6 +80,11 @@ header nav #busca-titulo {
   color: var(--branco);
   font-size: 13px;
   border: 2.5px solid var(--branco);
+  outline: none;
+}
+
+header nav #busca-titulo:focus {
+  border: 2.5px solid rgb(255, 170, 170);
 }
 
 header nav #busca-ano {
@@ -92,6 +97,11 @@ header nav #busca-ano {
   color: var(--branco);
   font-size: 13px;
   border: 2.5px solid var(--branco);
+  outline: none;
+}
+
+header nav #busca-ano:focus {
+  border: 2.5px solid rgb(255, 170, 170);
 }
 
 header nav #botao-search {
